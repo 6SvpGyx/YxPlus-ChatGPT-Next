@@ -356,3 +356,9 @@ pre {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+body {
+  background: url(/body_bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.95;
+}
