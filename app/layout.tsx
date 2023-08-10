@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "我为你撑伞:)",
+    title: ":)",
     statusBarStyle: "default",
   },
 };
