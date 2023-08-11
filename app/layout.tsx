@@ -4,6 +4,7 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import { useEffect } from "react";
 
 export const metadata: Metadata = {
   title: ":)",
@@ -28,6 +29,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    console.log(
+      "%c技术交流欢迎联系".concat("\nQQ：1606656170", "\nWeChat: bbouo-y"),
+      "color: blue",
+    );
+  }, []);
   return (
     <html lang="en" app="react-next-app" {...(null as any)}>
       <head>
