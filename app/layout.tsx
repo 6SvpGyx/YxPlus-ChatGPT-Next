@@ -1,6 +1,4 @@
 /* eslint-disable @next/next/no-page-custom-font */
-"use client";
-
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
@@ -31,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   console.log(
-    "%c技术交流欢迎联系".concat("\nQQ：1606656170", "\nWeChat: bbouo-y"),
+    "%c技术交流欢迎联系：".concat("\nQQ：1606656170", "\nWeChat: bbouo-y"),
     "color: blue",
   );
   return (
