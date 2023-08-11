@@ -170,6 +170,10 @@ export function Home() {
   useLoadData();
 
   useEffect(() => {
+    console.log(
+      "%c技术交流欢迎联系：".concat("\nQQ：1606656170", "\nWeChat: bbouo-y"),
+      "color: blue",
+    );
     console.log("[Config] got config from build time", getClientConfig());
     useAccessStore.getState().fetch();
   }, []);

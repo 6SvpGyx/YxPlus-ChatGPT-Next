@@ -63,7 +63,7 @@ export function useMessageSelector() {
     updateSelection,
   };
 }
-
+// 用户选择消息组件
 export function MessageSelector(props: {
   selection: Set<string>;
   updateSelection: Updater<Set<string>>;

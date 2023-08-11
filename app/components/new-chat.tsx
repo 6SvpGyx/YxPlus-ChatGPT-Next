@@ -16,7 +16,7 @@ import { MaskAvatar } from "./mask";
 import { useCommand } from "../command";
 import { showConfirm } from "./ui-lib";
 import { BUILTIN_MASK_STORE } from "../masks";
-
+// 计算
 function getIntersectionArea(aRect: DOMRect, bRect: DOMRect) {
   const xmin = Math.max(aRect.x, bRect.x);
   const xmax = Math.min(aRect.x + aRect.width, bRect.x + bRect.width);
@@ -39,7 +39,6 @@ function MaskItem(props: { mask: Mask; onClick?: () => void }) {
 
 function useMaskGroup(masks: Mask[]) {
   const [groups, setGroups] = useState<Mask[][]>([]);
-
   useEffect(() => {
     const computeGroup = () => {
       const appBody = document.getElementById(SlotID.AppBody);
