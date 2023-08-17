@@ -29,6 +29,7 @@ import { AuthPage } from "./auth";
 import { getClientConfig } from "../config/client";
 import { api } from "../client/api";
 import { useAccessStore } from "../store";
+import { getServerSideConfig } from "../config/server";
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
@@ -187,6 +188,7 @@ export function Home() {
       "color: blue",
     );
     console.log("[Config] got config from build time", getClientConfig());
+    console.log("getServerSideConfig: ", getServerSideConfig());
     useAccessStore.getState().fetch();
   }, []);
 
