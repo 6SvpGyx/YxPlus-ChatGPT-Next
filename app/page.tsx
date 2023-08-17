@@ -11,6 +11,7 @@ export default async function App() {
     <>
       <Home />
       {serverConfig?.isVercel && <Analytics />}
+      <div>备案号：11</div>
     </>
   );
 }
