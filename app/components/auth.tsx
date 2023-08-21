@@ -1,3 +1,4 @@
+"use client";
 import styles from "./auth.module.scss";
 import { IconButton } from "./button";
 

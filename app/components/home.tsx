@@ -22,6 +22,7 @@ import {
   Routes,
   Route,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 import { SideBar } from "./sidebar";
 import { useAppConfig } from "../store/config";
@@ -188,8 +189,12 @@ export function Home() {
       "color: blue",
     );
     console.log("[Config] got config from build time", getClientConfig());
-    console.log("getServerSideConfig: ", getServerSideConfig());
     useAccessStore.getState().fetch();
+
+    const ServerSideConfig = getServerSideConfig();
+    if (!ServerSideConfig.code) {
+      window.location.href = "/#/auth";
+    }
   }, []);
 
   if (!useHasHydrated()) {
