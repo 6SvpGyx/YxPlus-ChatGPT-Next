@@ -190,11 +190,6 @@ export function Home() {
     );
     console.log("[Config] got config from build time", getClientConfig());
     useAccessStore.getState().fetch();
-
-    const ServerSideConfig = getServerSideConfig();
-    if (!ServerSideConfig.code) {
-      window.location.href = "/#/auth";
-    }
   }, []);
 
   if (!useHasHydrated()) {
