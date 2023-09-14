@@ -130,7 +130,8 @@ export function SideBar(props: { className?: string }) {
         </div>
         <div className={styles["sidebar-sub-title"]}>WeChat: bbouo-y</div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
-          <ChatGptIcon />
+          {/* <ChatGptIcon /> */}
+          <img src="./logo.png" alt="" className="custom-logo" />
         </div>
       </div>
 
