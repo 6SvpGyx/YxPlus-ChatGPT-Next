@@ -128,7 +128,7 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
           YxPlus ChatGPT
         </div>
-        <div className={styles["sidebar-sub-title"]}>WeChat: bbouo-y</div>
+        <div className={styles["sidebar-sub-title"]}>WeChat: abstrue</div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           {/* <ChatGptIcon /> */}
           <img src="./logo.png" alt="" className={styles["custom-logo"]} />
