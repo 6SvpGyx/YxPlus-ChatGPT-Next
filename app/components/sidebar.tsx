@@ -5,14 +5,11 @@ import styles from "./home.module.scss";
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
-import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
-import CloseIcon from "../icons/close.svg";
 import DeleteIcon from "../icons/delete.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import DragIcon from "../icons/drag.svg";
-import Image from "next/image";
 
 import Locale from "../locales";
 
