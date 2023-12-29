@@ -6,7 +6,7 @@ import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: ":)",
+  title: "小铃铛",
   description: "Your personal ChatGPT Chat Bot.",
   viewport: {
     width: "device-width",
@@ -35,7 +35,12 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <a href="https://beian.miit.gov.cn/" className="reference">
+          https://beian.miit.gov.cn/
+        </a>
+      </body>
     </html>
   );
 }
