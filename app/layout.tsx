@@ -46,7 +46,11 @@ export default function RootLayout({
             <SpeedInsights />
           </>
         )}
-        <a href="https://beian.miit.gov.cn/" className="reference">
+        <a
+          href="https://beian.miit.gov.cn/"
+          target="_blank"
+          className="reference"
+        >
           京ICP备2023019236号-1
         </a>
       </body>
