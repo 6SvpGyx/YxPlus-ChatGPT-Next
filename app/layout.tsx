@@ -4,6 +4,10 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getServerSideConfig } from "./config/server";
+
+const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
   title: "小铃铛",
@@ -37,8 +41,13 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        {serverConfig?.isVercel && (
+          <>
+            <SpeedInsights />
+          </>
+        )}
         <a href="https://beian.miit.gov.cn/" className="reference">
-          https://beian.miit.gov.cn/
+          京ICP备2023019236号-1
         </a>
       </body>
     </html>

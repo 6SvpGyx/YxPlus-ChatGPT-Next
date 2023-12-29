@@ -365,11 +365,12 @@ body {
 .reference {
   width: 100%;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #495770;
+  text-align: center;
 }
